@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+.vscode
+upload.sh
+assets
+lib
+db/var

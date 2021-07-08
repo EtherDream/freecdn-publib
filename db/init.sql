@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS db_cdn;
+USE db_cdn;
+
+CREATE TABLE table_cdnjs (
+  `path`    TEXT          NOT NULL,
+  `ver`     INT UNSIGNED  NOT NULL,
+  `hash`    BINARY(32)    NOT NULL,
+  `size`    INT UNSIGNED  NOT NULL,
+  `sites`   INT UNSIGNED  NOT NULL,
+  `libid`   INT UNSIGNED  NOT NULL,
+  `mtime`   TIMESTAMP     DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY(`path`(200))
+);

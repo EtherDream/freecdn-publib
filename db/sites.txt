@@ -1,0 +1,15 @@
+cdnjs.loli.net
+lib.baomitu.com
+cdn.staticfile.org
+cdn.bootcss.com
+cdn.bootcdn.net
+unpkg.com
+g.alicdn.com
+pagecdn.io
+ajax.aspnetcdn.com
+ajax.googleapis.com
+code.jquery.com
+stackpath.bootstrapcdn.com
+maxcdn.bootstrapcdn.com
+cdn.datatables.net
+twemoji.maxcdn.com
