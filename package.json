@@ -1,6 +1,6 @@
 {
   "name": "freecdn-publib",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "public lib database for freecdn",
   "author": "EtherDream",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "test": "node test/test.js"
   },
   "devDependencies": {
-    "@types/node": "^16.4.6",
+    "@types/node": "^16.7.4",
     "node-fetch": "^2.6.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   }
 }

@@ -1,4 +1,5 @@
 USE db_cdn;
+SET GLOBAL local_infile=1;
 
 LOAD DATA
   LOCAL INFILE 'var/list.txt'

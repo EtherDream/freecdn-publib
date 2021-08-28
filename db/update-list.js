@@ -27,7 +27,10 @@ async function fetchJson(url) {
     try {
       FETCH_OPT.signal = ctrl.signal
       const res = await fetch(url, FETCH_OPT)
-      return await res.json()
+      const ret = await res.json()
+      if (ret) {
+        return ret
+      }
     } catch {
       console.warn('retry:', url, i)
     } finally {
@@ -75,7 +78,9 @@ async function task() {
       break
     }
     const info = await fetchJson('https://api.cdnjs.com/libraries/' + lib.name)
-    parseLib(info)
+    if (info) {
+      parseLib(info)
+    }
   }
 }
 
