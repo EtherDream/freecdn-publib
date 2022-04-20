@@ -7,40 +7,44 @@ export const CDNJS_COMPLETE = [
 export const CDNJS_PARTIAL = [
   // #0
   {
-    root: 'https://cdnjs.loli.net/ajax/libs/'
+    root: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-6-M/',
   },
   // #1
   {
-    root: 'https://lib.baomitu.com/'
+    root: 'https://cdnjs.loli.net/ajax/libs/'
   },
   // #2
   {
-    root: 'https://cdn.staticfile.org/'
+    root: 'https://lib.baomitu.com/'
   },
   // #3
   {
-    root: 'https://cdn.bootcss.com/'
+    root: 'https://cdn.staticfile.org/'
   },
   // #4
   {
-    root: 'https://cdn.bootcdn.net/ajax/libs/'
+    root: 'https://cdn.bootcss.com/'
   },
   // #5
+  {
+    root: 'https://cdn.bootcdn.net/ajax/libs/'
+  },
+  // #6
   {
     root: 'https://unpkg.com/',
     rewrite: [
       {from: /(.+?)\/(.+?)\/(.+)/, to: '$1@$2/dist/$3'},
     ]
   },
-  // #6
+  // #7
   {
     root: 'https://g.alicdn.com/code/lib/',
   },
-  // #7
+  // #8
   {
     root: 'https://pagecdn.io/lib/',
   },
-  // #8
+  // #9
   {
     root: 'https://ajax.aspnetcdn.com/ajax/',
     rewrite: [
@@ -57,11 +61,11 @@ export const CDNJS_PARTIAL = [
       {from: /^twitter-bootstrap\//, to: 'bootstrap/'},
     ]
   },
-  // #9
+  // #10
   {
     root: 'https://ajax.googleapis.com/ajax/libs/',
   },
-  // #10
+  // #11
   {
     root: 'https://code.jquery.com/',
     rewrite: [
@@ -73,28 +77,28 @@ export const CDNJS_PARTIAL = [
       {from: /^qunit\/(.*)\/qunit/, to: 'qunit/qunit-$1'},
     ]
   },
-  // #11
+  // #12
   {
     root: 'https://stackpath.bootstrapcdn.com/',
     rewrite: [
       {from: /^twitter-bootstrap\//, to: 'bootstrap/'},
     ]
   },
-  // #12
+  // #13
   {
     root: 'https://maxcdn.bootstrapcdn.com/',
     rewrite: [
       {from: /^twitter-bootstrap\//, to: 'bootstrap/'},
     ]
   },
-  // #13
+  // #14
   {
     root: 'https://cdn.datatables.net/',
     rewrite: [
       {from: /^datatables\//, to: ''},
     ]
   },
-  // #14
+  // #15
   {
     root: 'https://twemoji.maxcdn.com/v/',
     rewrite: [

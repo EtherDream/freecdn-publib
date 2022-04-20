@@ -19,6 +19,8 @@ cdnjs 所在的 GitHub 项目，可通过 jsdelivr 加速：
 
 国内的镜像：
 
+* https://lf6-cdn-tos.bytecdntp.com/cdn/expire-6-M/jquery/3.2.1/jquery.js
+
 * https://lib.baomitu.com/jquery/3.2.1/jquery.js
 
 * https://cdn.staticfile.org/jquery/3.2.1/jquery.js

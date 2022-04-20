@@ -1,3 +1,4 @@
+lf6-cdn-tos.bytecdntp.com
 cdnjs.loli.net
 lib.baomitu.com
 cdn.staticfile.org
