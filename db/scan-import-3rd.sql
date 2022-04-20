@@ -1,3 +1,4 @@
+-- 导入其他 CDN 的扫描结果，更新 sites 字段相应的 bit，其他字段不修改
 USE db_cdn;
 
 DROP TABLE IF EXISTS t;

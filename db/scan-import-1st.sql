@@ -1,3 +1,5 @@
+-- 导入 CDNJS 的扫描结果，更新 Hash 值
+-- size 字段只用于调试使用，最终不写入生成的数据文件中
 USE db_cdn;
 
 DROP TABLE IF EXISTS t;

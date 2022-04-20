@@ -1,8 +1,10 @@
 USE db_cdn;
 
--- https://mariadb.com/kb/en/group_concat/#limit
 SELECT
   HEX(hash),
+  -- 如果 hash 相同，找出最合理的资源（path 和 sites），参考 README.md#数据筛选
+  -- 使用 limit 可避免 SUBSTRING_INDEX（https://mariadb.com/kb/en/group_concat/#limit）
+  -- 注意两个 GROUP_CONCAT 中的 ORDER BY 保持一致
   SUBSTRING_INDEX(
     GROUP_CONCAT(path
       ORDER BY
