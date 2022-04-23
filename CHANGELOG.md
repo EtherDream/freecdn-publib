@@ -18,4 +18,8 @@ add 700,797 urls
 
 add lf6-cdn-tos.bytecdntp.com ([字节跳动静态资源公共库](https://cdn.bytedance.com/))
 
-add 2,532,408
+add 2,532,408 urls
+
+# v0.1.2
+
+add 260,164 urls
