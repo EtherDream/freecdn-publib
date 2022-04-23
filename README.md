@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/freecdn-publib.svg?style=flat)](https://www.npmjs.com/package/freecdn-publib)
+
 # 项目简介
 
 本项目为 [freecdn](https://github.com/EtherDream/freecdn) 提供公共资源 Hash/URL 存储、查询和导出功能。
@@ -85,7 +87,7 @@ cdnjs 所在的 GitHub 项目，可通过 jsdelivr 加速：
 
 # 存储格式
 
-本项目使用自定义的格式编码数据，总共不到 50MB，直接打包在 NPM 包里。（相比 SQLite 可节省需数百 MB 空间）
+本项目使用自定义的格式编码数据，直接打包在 NPM 包里。（相比 SQLite 可节省需数百 MB 空间）
 
 数据存放在 assets 目录：
 
