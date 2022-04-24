@@ -2,8 +2,8 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 
 const FETCH_TIMEOUT = 1000 * 600
-const MAX_RETRY = 50
-const MAX_CONN = 100
+const MAX_RETRY = 100
+const MAX_CONN = 20
 
 const FETCH_OPT = {
   headers: {
@@ -16,6 +16,10 @@ const fd = fs.openSync('var/list.txt', 'w+')
 
 let mLibs
 let mCount = 0
+
+function sleep(ms) {
+  return new Promise(f => setTimeout(f, ms))
+}
 
 async function fetchJson(url) {
   for (let i = 1; i <= MAX_RETRY; i++) {
@@ -31,8 +35,9 @@ async function fetchJson(url) {
       if (ret) {
         return ret
       }
-    } catch {
-      console.warn('retry:', url, i)
+    } catch (err) {
+      console.warn('retry:', url, i, err.message)
+      await sleep(1000 + i * 50)
     } finally {
       clearTimeout(tid)
     }
